@@ -9,9 +9,10 @@ module.exports = {
     },
     fontFamily: {
       bellefair: ['Bellefair'],
-      barlowCondensed: ['Barlow Condensed']
+      barlowCondensed: ['Barlow Condensed'],
+      barlow: ['Barlow']
     },
-    extend: { babyBlue: '#D0D6F9', twinBlack: '#0B0D17' }
+    extend: { colors: { babyBlue: '#D0D6F9', twinBlack: '#0B0D17' } }
   },
   plugins: []
 }
