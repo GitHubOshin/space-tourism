@@ -1,6 +1,6 @@
 import pages from '../data/pages'
 
-function MenuBar() {
+function NavBar() {
   return (
     <nav className="relative w-full max-w-[830px] h-[96px] backdrop-blur bg-[hsl(0,0%,100%,0.1)] tablet:flex mobile:hidden justify-center items-center">
       <hr className="absolute right-[800px] border-[#979797] opacity-40 w-[437px] desktop:block tablet:hidden" />
@@ -20,4 +20,4 @@ function MenuBar() {
   )
 }
 
-export default MenuBar
+export default NavBar
