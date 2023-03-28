@@ -6,7 +6,7 @@ function Header() {
       <img
         alt="Logo"
         src="images/shared/logo.svg"
-        className="mobile:w-10 mobile:h-10 tablet:w-12 tablet:h-12"
+        className="mobile:w-10 mobile:h-10 tablet:w-[48px] tablet:h-[48px]"
       />
       <NavBar />
     </header>
