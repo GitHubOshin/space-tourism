@@ -1,6 +1,6 @@
 import Header from '../components/Header'
 
-function HomePage() {
+function SectionHome() {
   return (
     <section className="relative w-screen h-screen min-w-[375px]">
       <img
@@ -44,4 +44,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default SectionHome

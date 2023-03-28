@@ -1,9 +1,9 @@
-import HomePage from './pages/HomePage'
+import SectionHome from './sections/SectionHome'
 
 function App() {
   return (
-    <div className="App">
-      <HomePage />
+    <div className="">
+      <SectionHome />
     </div>
   )
 }
