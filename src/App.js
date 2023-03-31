@@ -1,10 +1,11 @@
-import DestinationPage from './pages/DestinationPage'
-import HomePage from './pages/HomePage'
+// import HomePage from './pages/HomePage'
+// import DestinationPage from './pages/DestinationPage'
+import CrewPage from './pages/CrewPage'
 
 function App() {
   return (
     <div className="">
-      <DestinationPage />
+      <CrewPage />
     </div>
   )
 }
