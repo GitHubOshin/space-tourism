@@ -1,4 +1,4 @@
-import CrewDetails from '../components/CrewDetails'
+import CrewContent from '../components/contents/CrewContent'
 import BgAndHeader from '../components/BgAndHeader'
 
 function CrewPage() {
@@ -8,7 +8,7 @@ function CrewPage() {
       bgTablate="images/crew/background-crew-tablet.jpg"
       bgMobile="images/crew/background-crew-mobile.jpg"
     >
-      <CrewDetails />
+      <CrewContent />
     </BgAndHeader>
   )
 }

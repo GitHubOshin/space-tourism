@@ -1,6 +1,6 @@
-import TitlePage from './TitlePage'
+import TitlePage from '../TitlePage'
 
-function CrewDetails() {
+function CrewContent() {
   return (
     <div className="h-fit flex mobile:flex-col desktop:flex-row justify-between desktop:w-[1110px] mt-[62px]">
       <div className="h-full flex flex-col gap-y-[154px]">
@@ -24,4 +24,4 @@ function CrewDetails() {
   )
 }
 
-export default CrewDetails
+export default CrewContent

@@ -1,7 +1,7 @@
-import { DestinationMenu } from './Buttons'
-import TitlePage from './TitlePage'
+import { DestinationMenu } from '../Buttons'
+import TitlePage from '../TitlePage'
 
-function DestinationDetails(props) {
+function DestinationContent(props) {
   const { image, name, description, distance, travel } = props
 
   return (
@@ -49,4 +49,4 @@ function DestinationDetails(props) {
   )
 }
 
-export default DestinationDetails
+export default DestinationContent

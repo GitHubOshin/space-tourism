@@ -1,4 +1,4 @@
-import DestinationDetails from '../components/DestinationDetails'
+import DestinationContent from '../components/contents/DestinationContent'
 import Header from '../components/Header'
 
 function DestinationPage() {
@@ -21,7 +21,7 @@ function DestinationPage() {
       />
       <div className="absolute top-0 w-full h-full flex flex-col items-center gap-y-[76px] pt-[24px] tablet:pt-0 px-[24px] tablet:px-0">
         <Header />
-        <DestinationDetails />
+        <DestinationContent />
       </div>
     </div>
   )
