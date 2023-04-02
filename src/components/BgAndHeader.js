@@ -19,7 +19,7 @@ function BgAndHeader(props) {
         src={bgMobile}
         className="w-full h-full tablet:hidden min-w-[375px]"
       />
-      <div className="absolute top-0 w-full h-full">
+      <div className="absolute top-0 w-full h-full flex flex-col items-center ">
         <Header />
         {props.children}
       </div>
