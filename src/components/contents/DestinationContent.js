@@ -4,8 +4,7 @@ import TitlePage from '../TitlePage'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-function DestinationContent(props) {
-  const { image, name, description, distance, travel } = props
+function DestinationContent() {
   const [destinations, setDestinations] = useState([])
 
   useEffect(() => {
