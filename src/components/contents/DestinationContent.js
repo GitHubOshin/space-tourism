@@ -38,8 +38,8 @@ function DestinationContent() {
             <DestinationMenu name="EUROPA" />
             <DestinationMenu name="TITAN" />
           </div>
-          <h1 className="text-white font-bellefair mobile:text-[56px] tablet:text-[80px] desktop:text-[100px] mt-[10px] mb-[10px]">
-            {moon.name}
+          <h1 className="text-white uppercase font-bellefair mobile:text-[56px] tablet:text-[80px] desktop:text-[100px] mt-[10px] mb-[10px]">
+            {moon?.name}
           </h1>
           <p className="text-babyBlue mobile:text-[15px] tablet:text-[16px] desktop:text-[18px] font-barlow mobile:leading-[25px] tablet:leading-[28px] desktop:leading-[32px]">
             {moon?.description || ''}
@@ -59,7 +59,7 @@ function DestinationContent() {
                 AVG. DISTANCE
               </h3>
               <p className="text-white text-[28px] font-bellefair">
-                {moon.travel}
+                {moon?.travel}
               </p>
             </div>
           </div>
