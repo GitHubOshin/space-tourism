@@ -24,16 +24,16 @@ function TechnologyContent() {
       <TitlePage number="03" title="SPACE LAUNCH 101" />
       <div className="flex justify-between mobile:flex-col-reverse desktop:flex-row mobile:items-center desktop:items-stretch">
         <div className="w-full flex max-w-[630px] pt-[110px] gap-x-[80px] mobile:flex-col desktop:flex-row">
-          <div className="flex mobile:flex-row desktop:flex-col h-full max-h-[304px] min-w-[152px] justify-between">
-            <button className="w-[80px] h-[80px] text-white hover:text-black text-[32px] font-bellefair rounded-full hover:bg-white border border-[#4c4d56]">
+          <div className="flex mobile:flex-row desktop:flex-col h-full max-h-[304px] mobile:w-[152px] tablet:w-[210px] desktop:w-fit justify-between mobile:self-center desktop:self-start">
+            <button className="mobile:w-10 mobile:h-10 tablet:w-[60px] tablet:h-[60px] desktop:w-[80px] desktop:h-[80px] text-white hover:text-black desktop:text-[32px] font-bellefair rounded-full hover:bg-white border border-[#4c4d56]">
               1
             </button>
 
-            <button className="w-[80px] h-[80px] text-white hover:text-black text-[32px] font-bellefair rounded-full hover:bg-white border border-[#4c4d56]">
+            <button className="mobile:w-10 mobile:h-10 tablet:w-[60px] tablet:h-[60px] desktop:w-[80px] desktop:h-[80px] text-white hover:text-black desktop:text-[32px] font-bellefair rounded-full hover:bg-white border border-[#4c4d56]">
               2
             </button>
 
-            <button className="w-[80px] h-[80px] text-white hover:text-black text-[32px] font-bellefair rounded-full hover:bg-white border border-[#4c4d56]">
+            <button className="mobile:w-10 mobile:h-10 tablet:w-[60px] tablet:h-[60px] desktop:w-[80px] desktop:h-[80px] text-white hover:text-black desktop:text-[32px] font-bellefair rounded-full hover:bg-white border border-[#4c4d56]">
               3
             </button>
           </div>
