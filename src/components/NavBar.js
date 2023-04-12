@@ -1,4 +1,5 @@
 import pages from '../data/pages'
+import { Link } from 'react-router-dom'
 
 function NavBar() {
   return (
@@ -11,7 +12,7 @@ function NavBar() {
               <b className="tablet:hidden desktop:block font-bold">
                 {page.number}
               </b>
-              <a href={page.href}>{page.pageName}</a>
+              <Link to={page.href}>{page.pageName}</Link>
             </button>
           )
         })}
