@@ -1,13 +1,8 @@
-// import HomePage from './pages/HomePage'
-// import DestinationPage from './pages/DestinationPage'
-import CrewPage from './pages/CrewPage'
+import { RouterProvider } from 'react-router-dom'
+import router from './data/router'
 
 function App() {
-  return (
-    <div className="">
-      <CrewPage />
-    </div>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App
