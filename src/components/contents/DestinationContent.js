@@ -1,8 +1,27 @@
 import axios from 'axios'
-import { DestinationMenu } from '../Buttons'
 import TitlePage from '../TitlePage'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
+const destinationLinks = [
+  {
+    name: 'Moon',
+    url: '/moon'
+  },
+  {
+    name: 'Mars',
+    url: '/mars'
+  },
+  {
+    name: 'Europa',
+    url: '/europa'
+  },
+  {
+    name: 'Titan',
+    url: '/titan'
+  }
+]
 
 function DestinationContent() {
   const [destinations, setDestinations] = useState([])
@@ -33,10 +52,17 @@ function DestinationContent() {
         />
         <div className="max-w-[445px]">
           <div className="mobile:h-[28px] tablet:h-[34px] flex gap-x-[35px]">
-            <DestinationMenu name="MOON" />
-            <DestinationMenu name="MARS" />
-            <DestinationMenu name="EUROPA" />
-            <DestinationMenu name="TITAN" />
+            {destinationLinks.map(({ name, url }) => {
+              return (
+                <Link
+                  key={name}
+                  to={`/destinations${url}`}
+                  className="text-babyBlue hover:text-white uppercase font-barlowCondensed text-[16px] tracking-[2.7px] hover:border-b-[3px]"
+                >
+                  {name}
+                </Link>
+              )
+            })}
           </div>
           <h1 className="text-white uppercase font-bellefair mobile:text-[56px] tablet:text-[80px] desktop:text-[100px] mt-[10px] mb-[10px]">
             {moon?.name}
