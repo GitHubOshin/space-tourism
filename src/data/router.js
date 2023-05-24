@@ -3,6 +3,7 @@ import HomePage from '../pages/HomePage'
 import DestinationPage from '../pages/DestinationPage'
 import CrewPage from '../pages/CrewPage'
 import TechnologyPage from '../pages/TechnologyPage'
+import DestinationContent from '../components/contents/DestinationContent'
 
 const router = createBrowserRouter([
   {
@@ -10,15 +11,21 @@ const router = createBrowserRouter([
     element: <HomePage />
   },
   {
-    path: 'destination',
-    element: <DestinationPage />
+    path: '/destinations',
+    element: <DestinationPage />,
+    children: [
+      {
+        path: ':destinationName',
+        element: <DestinationContent />
+      }
+    ]
   },
   {
-    path: 'crew',
+    path: '/crew',
     element: <CrewPage />
   },
   {
-    path: 'technology',
+    path: '/technology',
     element: <TechnologyPage />
   }
 ])
