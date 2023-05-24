@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import TitlePage from '../TitlePage'
 import { TechnologyNumberButton } from '../Buttons'
+import technologyContents from '../../data/technologyContents'
 
 function TechnologyContent() {
   const [technology, setTechnology] = useState([])
@@ -20,10 +21,10 @@ function TechnologyContent() {
   }
   console.log(technology)
   const [spaceport] = technology
+
   return (
     <div className="w-full max-w-[1275px] mt-[76px] desktop:self-end">
       <TitlePage number="03" title="SPACE LAUNCH 101" />
-
       <div className="flex justify-between mobile:flex-col-reverse desktop:flex-row mobile:items-center desktop:items-stretch">
         <div className="w-full flex max-w-[630px] pt-[110px] gap-x-[80px] mobile:flex-col desktop:flex-row">
           <div className="flex mobile:flex-row desktop:flex-col h-full max-h-[304px] mobile:w-[152px] tablet:w-[210px] desktop:w-fit justify-between mobile:self-center desktop:self-start">
