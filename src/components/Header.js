@@ -1,4 +1,5 @@
 import NavBar from './NavBar'
+import Sidebar from './Sidebar'
 
 function Header() {
   return (
@@ -9,6 +10,7 @@ function Header() {
         className="mobile:w-10 mobile:h-10 tablet:w-[48px] tablet:h-[48px]"
       />
       <NavBar />
+      <Sidebar />
     </header>
   )
 }
