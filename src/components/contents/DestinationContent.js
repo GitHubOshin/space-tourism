@@ -42,16 +42,16 @@ function DestinationContent() {
   const [moon /*, mars, europa, titan*/] = destinations
 
   return (
-    <div className="desktop:w-[1110px] h-[576px] flex flex-col mobile:gap-[31px] tablet:gap-[59px]">
+    <div className="desktop:w-[1110px] h-[576px] mobile:text-center desktop:text-start flex flex-col mobile:gap-[31px] tablet:gap-[59px]">
       <TitlePage number="01" title="PICK YOUR DESTINATION" />
       <div className="self-end w-full desktop:w-[1047px] h-[478px] grid desktop:grid-cols-2 desktop:gap-[166px]">
         <img
           alt={moon?.name || ''}
           src={moon?.images?.png || ''}
-          className="self-end mobile:w-[170px] mobile:h-[170px] tablet:w-[300px] tablet:h-[300px] desktop:w-[445px] desktop:h-[445px]"
+          className="desktop:self-end m-auto mobile:w-[170px] mobile:h-[170px] tablet:w-[300px] tablet:h-[300px] desktop:w-[445px] desktop:h-[445px]"
         />
         <div className="max-w-[445px] mobile:mt-7 tablet:mt-[53px] desktop:mt-0">
-          <div className="mobile:h-[28px] tablet:h-[34px] flex gap-x-[35px]">
+          <div className="mobile:h-[28px] tablet:h-[34px] flex mobile:justify-center desktop:justify-start gap-x-[35px]">
             {destinationLinks.map(({ name, url }) => {
               return (
                 <Link
