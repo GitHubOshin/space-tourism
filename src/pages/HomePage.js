@@ -5,17 +5,17 @@ function HomePage() {
     <section className="relative w-screen h-screen min-w-[375px]">
       <img
         alt="background"
-        src="images/home/bg-desktop.png"
+        src="/images/home/bg-desktop.png"
         className="w-full h-full mobile:hidden desktop:block"
       />
       <img
         alt="background"
-        src="images/home/bg-home-tablet.png"
+        src="/images/home/bg-home-tablet.png"
         className="w-full h-full mobile:hidden tablet:block desktop:hidden  min-w-[375px]"
       />
       <img
         alt="background"
-        src="images/home/bg-home-mobile.png"
+        src="/images/home/bg-home-mobile.png"
         className="w-full h-full tablet:hidden min-w-[375px]"
       />
       <div className="absolute top-0 w-full h-full flex flex-col items-center mobile:gap-y-[48px] tablet:gap-y-[106px] desktop:gap-y-[251px] mobile:pt-6 tablet:pt-0 mobile:px-6 tablet:px-0">
