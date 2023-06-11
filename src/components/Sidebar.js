@@ -12,7 +12,7 @@ function Sidebar() {
           className="text-white tablet:hidden"
           onClick={() => setOpenSidebar(true)}
         >
-          <img alt="Sidebar" src="images/shared/icon-hamburger.svg" />
+          <img alt="Sidebar" src="/images/shared/icon-hamburger.svg" />
         </button>
       )}
       {openSidebar === true ? (
@@ -21,7 +21,7 @@ function Sidebar() {
             className="mr-8 self-end"
             onClick={() => setOpenSidebar(false)}
           >
-            <img alt="Close sidebar" src="images/shared/icon-close.svg" />
+            <img alt="Close sidebar" src="/images/shared/icon-close.svg" />
           </button>
           <div className="flex flex-col justify-between h-[184px] mt-[60px]">
             {pages.map(({ number, name, url }) => {
